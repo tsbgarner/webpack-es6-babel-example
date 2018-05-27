@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: './src/example.js',
+  entry: ['babel-polyfill', './src/example.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'example.bundle.js'
@@ -11,9 +11,11 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015']
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['es2015']
+          }
         }
       }
     ]

@@ -6,11 +6,11 @@
   "dependencies": {},
   "devDependencies": {
     "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
     "webpack": "^4.9.1",
     "webpack-cli": "^2.1.4"
   },
   "scripts": {
-    "babel": "babel --presets es2015 src/example.js -o dist/example.bundle.js",
     "build": "webpack"
   },
   "author": "",
