@@ -1,0 +1,18 @@
+{
+  "name": "webpack-es6-babel",
+  "version": "1.0.0",
+  "description": "A test example of using ES6 with babel and webpack",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
+  },
+  "scripts": {
+    "babel": "babel --presets es2015 src/example.js -o dist/example.bundle.js",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC"
+}
